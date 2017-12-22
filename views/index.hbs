@@ -1,0 +1,29 @@
+UXD 2017 Review!!!
+
+<ul>
+{{#each jsonObj}}
+	<li>
+		<h2>{{this.person.name}}</h2>
+	</li>
+	<li>
+		<p>{{this.person.successes.text1}}</p>
+		<p>{{this.person.successes.text2}}</p>
+	</li>
+	<li>
+		<p>{{this.person.appreciations.text1}}</p>
+		<p>{{this.person.appreciations.text2}}</p>
+	</li>
+{{/each}}
+</ul>
+
+{{!-- <p>
+{{#getSuccess}}
+	{{this.success_mess}}
+{{/getSuccess}}
+</p>
+
+<p>
+{{#getAppreciation}}
+	{{this.appreciation_mess}}
+{{/getAppreciation}}
+</p> --}}
